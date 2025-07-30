@@ -4,21 +4,21 @@ A simple yet extensible C# console application simulating a smart parking lot ma
 
 ---
 
-## 🚗 Features
+##  Features
 
-- ✅ Check-In / Check-Out vehicles
-- 📂 Persistent storage using JSON files (checked-in and checked-out vehicles stored separately)
-- 🔎 Filter parked vehicles by type (Car, Truck, Motorcycle)
-- 🧠 Polymorphic deserialization using `System.Text.Json`
-- 📑 Strong validation using `{CustomeValidation}`
-- ❗ Custom exception handling via `ParkingLotException`
-- 🛎️ Event triggered on full parking lot
-- 📃 Well-structured DTOs and services
-- 🧪 Easily testable and extensible architecture
+-  Check-In / Check-Out vehicles
+-  Persistent storage using JSON files (checked-in and checked-out vehicles stored separately)
+-  Filter parked vehicles by type (Car, Truck, Motorcycle)
+-  Polymorphic deserialization using `System.Text.Json`
+-  Strong validation using `{CustomeValidation}`
+-  Custom exception handling via `ParkingLotException`
+-  Event triggered on full parking lot
+-  Well-structured DTOs and services
+-  Easily testable and extensible architecture
 
 ---
 
-## 📋 Menu Options
+##  Menu Options
 
 ```
 ===================== Menu =======================
@@ -34,7 +34,7 @@ Please Choose one of the following options:
 
 ---
 
-## 🗃️ Project Structure
+##  Project Structure
 
 ```
 SmartParkingSystem/
@@ -82,7 +82,7 @@ SmartParkingSystem/
 
 ---
 
-## 🛠 Technologies
+##  Technologies
 
 - **C# .NET**
 - **System.Text.Json** (with polymorphism)
@@ -92,7 +92,7 @@ SmartParkingSystem/
 - ...
 ---
 
-## 🧪 Validation
+##  Validation
 
 Vehicle validation is enforced before check-in:
 - License plate must be at least **5 characters**.
@@ -101,14 +101,14 @@ Vehicle validation is enforced before check-in:
 
 ---
 
-## ⚠️ Event Handling
+##  Event Handling
 
 When the last available slot is filled, an event (`FullLotEvent`) is triggered.
-Subscribers can be notified with a custom message (e.g., `"⚠️ The parking lot is now full."`).
+Subscribers can be notified with a custom message (e.g., `" The parking lot is now full."`).
 
 ---
 
-## 📦 Storage
+##  Storage
 
 All vehicle data is persisted in separate JSON files:
 - `checkedin.json` → active vehicles in the lot.
@@ -118,7 +118,7 @@ Files are updated on every operation.
 
 ---
 
-## 📞 Contact
+##  Contact
 
 Project by: **Mohammad Sofan**
 
