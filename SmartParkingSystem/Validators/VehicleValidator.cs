@@ -17,7 +17,7 @@ namespace SmartParkingSystem.Validators
         public string Field {  get; set; } = string.Empty;
         public string Message { get; set; } = string.Empty;
     }
-    internal class VehicelValidator
+    internal class VehicleValidator
     {
         public ValidationResult IsValid(Vehicle vehicle)
         {
