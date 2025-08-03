@@ -85,7 +85,7 @@ SmartParkingSystem/
 ##  Technologies
 
 - **C# .NET**
-- **System.Text.Json** (with polymorphism)
+- **System.Text.Json**
 - **Event Handling**
 - **LINQ and Expressions**
 - **Console UI**
