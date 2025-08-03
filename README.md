@@ -15,6 +15,7 @@ A simple yet extensible C# console application simulating a smart parking lot ma
 -  Event triggered on full parking lot
 -  Well-structured DTOs and services
 -  Easily testable and extensible architecture
+-  Logging with serilog
 
 ---
 
@@ -89,6 +90,7 @@ SmartParkingSystem/
 - **Event Handling**
 - **LINQ and Expressions**
 - **Console UI**
+- **Serilog**
 - ...
 ---
 
@@ -108,6 +110,23 @@ Subscribers can be notified with a custom message (e.g., `" The parking lot is n
 
 ---
 
+## Logging 
+The application uses Serilog for structured and multi-sink logging. All system events, operations, and errors are logged to:
+
+ - log.txt → plain text log file
+
+ - log.json → structured JSON log file
+
+ - Seq → centralized log management and live dashboard for querying and visualization
+
+Example log entries include:
+
+ - Vehicle check-in and check-out operations
+
+ - Validation failures and custom exceptions
+
+ - Parking lot full events and notifications
+   
 ##  Storage
 
 All vehicle data is persisted in separate JSON files:
