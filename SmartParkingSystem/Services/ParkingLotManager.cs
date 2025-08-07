@@ -13,7 +13,7 @@ namespace SmartParkingSystem.Services
     {
         private readonly IVehicleStorageService _vehicleStorageService;
         private readonly int _totalSpots;
-        private readonly VehicleValidator _vehicelValidator;
+        private readonly VehicleValidator _vehicleValidator;
         private readonly ILogger _logger = Log.ForContext<ParkingLotManager>();
 
         public delegate void LotFullHandler(object sender, EventArgs e);
@@ -26,7 +26,7 @@ namespace SmartParkingSystem.Services
             )
         {
             _vehicleStorageService = new VehicleFileStorageService(checkInFilePath, checkOutFilePath); 
-            _vehicelValidator = new VehicleValidator();
+            _vehicleValidator = new VehicleValidator();
             _totalSpots = totalSpots;
         }
 
@@ -36,7 +36,7 @@ namespace SmartParkingSystem.Services
             {
                 _logger.Information("Attempting to check-in vehicle with plate: {Plate}", vehicle.LicensePlate);
 
-                var validationResult = _vehicelValidator.IsValid(vehicle);
+                var validationResult = _vehicleValidator.IsValid(vehicle);
                 if (!validationResult.IsValid)
                 {
                     string errors = string.Join(Environment.NewLine, validationResult.Errors.Select(e => e.Message));
